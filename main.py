@@ -17,8 +17,8 @@ async def send_welcome(message: types.Message):
 
 @dp.message_handler()
 async def bot_message(message: types.Message):
-    if message.text == 'Найти город':
-        await message.reply("Введите название города или его часть", reply_markup=menu.find_city_menu)
+    if message.text == 'Найти город 🏙':
+        await message.reply("Введите название города или его часть")
 
 if __name__ == '__main__':
     executor.start_polling(dp, skip_updates=True)
