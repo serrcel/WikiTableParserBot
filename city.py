@@ -16,4 +16,5 @@ class City(base):
         self.url = url
 
     def __repr__(self):
-        return f'{self.name} {self.people_count}\n{self.url}'
+        return {'Город': {self.name}, 'Численность': {self.people_count}, 'URL': {self.url}}
+        #f'{self.name} {self.people_count}\n{self.url}'
